@@ -2,7 +2,7 @@ import tushare as ts
 import pandas as pd
 
 # 1. 初始化接口（替换为你的Token）
-ts.set_token('你的API令牌')
+ts.set_token('7a4c679ae21b67e10039d6a4b1b9cf405c1bdb493786e41b17f6d91c')
 pro = ts.pro_api()
 
 # 2. 获取股票基本信息（如沪深300成分股）
