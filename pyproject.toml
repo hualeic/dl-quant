@@ -1,0 +1,31 @@
+[project]
+name = "dl-quant"
+version = "0.1.0"
+description = "Quantitative trading data toolkit for Chinese stock market"
+requires-python = ">=3.10"
+dependencies = [
+    "tushare>=1.4.23",
+    "jqdatasdk>=1.9.7",
+    "pandas",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "pytest",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
